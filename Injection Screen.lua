@@ -153,7 +153,7 @@
 		Description.Position = UDim2.new(0, 0, 1, 0)
 		Description.Size = UDim2.new(1, 0, 0, 22)
 		Description.Font = Enum.Font.SourceSans
-		Description.Text = "Next-Level Gaming."
+		Description.Text = "V. 1.9.0"
 		Description.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Description.TextSize = 20.000
 		Description.TextTransparency = 1.000
