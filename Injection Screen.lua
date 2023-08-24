@@ -50,6 +50,7 @@ If you want your own Injection Screen, please contact N4ri @norimiyazaki on Disc
 
 -- This is to make detection on Games slightly harder as they cannot look for a specific name
 
+--[[
 local upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 local lowerCase = "abcdefghijklmnopqrstuvwxyz"
 local numbers = "0123456789"
@@ -259,3 +260,4 @@ local function TIBAKZY_fake_script()
 	
 end
 coroutine.wrap(TIBAKZY_fake_script)()
+--]]
