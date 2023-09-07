@@ -185,7 +185,7 @@ local function TIBAKZY_fake_script()
 	Logo.Size = UDim2.new(0,115,0,115)
 	
 	-- Wait until the Game is Loaded
-	repeat wait(1) until game:IsLoaded()
+	repeat task.wait(1) until game:IsLoaded()
 	
 	
 	-- Install the Blurring Effect
@@ -199,7 +199,7 @@ local function TIBAKZY_fake_script()
 	for i=1, 50 do
 		BlurRadius = BlurRadius+1 
 		BlurEffect.Size = BlurRadius
-		wait(0.01)
+		task.wait(0.01)
 	end
 	
 	-- Fade in Background and Text Background
@@ -207,7 +207,7 @@ local function TIBAKZY_fake_script()
 	game:GetService("TweenService"):Create(TB, TweenInfo.new(1), {ImageTransparency = 0}):Play()
 	
 	-- Wait 2 Seconds
-	wait(2)
+	task.wait(2)
 	
 	-- Remove Blurring Effect
 	BlurEffect:Destroy()
@@ -217,7 +217,7 @@ local function TIBAKZY_fake_script()
 	Logo:TweenSize(UDim2.new(0, 80, 0, 80), "Out", "Quad", 1, true)
 	
 	-- Wait 1 Second
-	wait(1)
+	task.wait(1)
 	
 	-- Shift Position of Logo and Text Frame so that they are next to each other
 	Logo:TweenPosition(UDim2.new(0.5,-50,0.5,0), "Out", "Quad", 1, true)
@@ -228,7 +228,7 @@ local function TIBAKZY_fake_script()
 	game:GetService("TweenService"):Create(Desc, TweenInfo.new(1), {TextTransparency = 0}):Play()
 	
 	-- Wait 2 Seconds
-	wait(2)
+	task.wait(2)
 	
 	-- Return Logo and TextFrame to Original Position
 	Logo:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 1, true)
@@ -239,19 +239,19 @@ local function TIBAKZY_fake_script()
 	game:GetService("TweenService"):Create(Desc, TweenInfo.new(1), {TextTransparency = 1}):Play()
 	
 	-- Wait 2 Seconds
-	wait(2)
+	task.wait(2)
 	
 	-- Shrink Background into a Square
 	BFrame:TweenSize(UDim2.new(0, 153,0, 153), "Out", "Quad", 0.5, true)
 	
-	wait(0.5)
+	task.wait(0.5)
 	
 	-- Shrink Background and Logo into Nothing
 	Logo:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true)
 	BFrame:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true)
 	
 	-- Wait 1 Second
-	wait(1)
+	task.wait(1)
 	
 	-- Remove GUI Entirely
 	script.Parent:Destroy()
